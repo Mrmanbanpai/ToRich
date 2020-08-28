@@ -173,7 +173,6 @@ func main() {
 	go rich.ReadAndPrint()
 
 	go rich.Ticker(u.String())
-	//service.WriteMessagesage()
 
 	for {
 		select {

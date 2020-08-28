@@ -26,7 +26,8 @@ func (rich *Rich) Ticker(url string) {
 				logrus.Errorf("[main] ping 失败 , err : %v ", err)
 				rich.C = GetConn(url)
 				if err != nil {
-					logrus.Fatal("dial:", err)
+
+					logrus.Fatal("fatal err : dial:", err)
 				}
 			}
 		}
